@@ -1,9 +1,12 @@
 # dependencies
 node_modules/
 
-# dependencies
+#uploadFolder
 uploads/
+#Frontendbuild
+public/
 
+#secrets
 credentials*
 token*
 .env
