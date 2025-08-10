@@ -3,3 +3,7 @@ node_modules/
 
 # dependencies
 uploads/
+
+credentials*
+token*
+.env
