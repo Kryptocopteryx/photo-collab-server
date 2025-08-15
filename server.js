@@ -48,9 +48,10 @@ app.post('/upload-image', async (req, res) => {
     const ext = matches[1]; // png / jpeg
     const base64Data = matches[2];
     const buffer = Buffer.from(base64Data, 'base64');
+    const random = Math.floor(Math.random() * 100);
 
     // Save to temp file
-    const filename = `temp-${Date.now()}.${ext}`;
+    const filename = `img-${Date.now()}-${random}.${ext}`;
     const filepath = path.join(__dirname, 'uploads', filename);
     fs.writeFileSync(filepath, buffer);
 
